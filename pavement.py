@@ -19,9 +19,7 @@ project_name ='fopp'
 master_url = None
 if not master_url:
     master_url = get_master_url()
-
 master_url = ''
-
 
 master_app = 'runestone'
 serving_dir = "./build/fopp"
@@ -59,8 +57,8 @@ options(
                        'proxy_uri_files': '/jobe/index.php/restapi/files/',
                        'downloads_enabled': 'false',
                        'enable_chatcodes': 'false',
-                       'lockdown': "True"
-                       'allow_pairs': 'false'
+                       'allow_pairs': 'false',
+                       'minimal_outside_links': 'True',
                         }
     )
 )
